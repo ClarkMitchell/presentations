@@ -1,26 +1,28 @@
 <template>
   <div id="MyFirstSlideshow">
     <div class="eg-slideshow">
-      <slide>
-        <h1>Hi there !</h1>
-        <h4>This is your first slideshow !</h4>
-      </slide>
-      <slide enter="bounceInRight" leave="fadeOut">
-        <h3>Hey modify me !</h3>
-        <p>Come on modify me ! If you are running the development server, you will see the changes take effect
-          immediately
-        </p>
-      </slide>
-      <slide enter="fadeIn">
-        <h3>Want cool effects?</h3>
-        <p>Code your own, or try stealing for the other slideshows !</p>
-      </slide>
+      <web></web>
+<!--      <slide>-->
+<!--        <h1>Vue for the New</h1>-->
+<!--        <h4>This is your first slideshow !</h4>-->
+<!--      </slide>-->
+<!--      <slide enter="bounceInRight" leave="fadeOut">-->
+<!--        <h3>Hey modify me !</h3>-->
+<!--        <p>Come on modify me ! If you are running the development server, you will see the changes take effect-->
+<!--          immediately-->
+<!--        </p>-->
+<!--      </slide>-->
+<!--      <slide enter="fadeIn">-->
+<!--        <h3>Want cool effects?</h3>-->
+<!--        <p>Code your own, or try stealing for the other slideshows !</p>-->
+<!--      </slide>-->
     </div>
   </div>
 </template>
 
 <script>
 import eagle from 'eagle.js'
+import Web from './Web'
 
 export default {
   mixins: [eagle.slideshow],
@@ -28,6 +30,9 @@ export default {
     title: 'Vue for the New',
     description: 'A boilerplate to get you started',
     path: 'vue-for-the-new'
+  },
+  components: {
+    'web': Web
   }
 }
 </script>

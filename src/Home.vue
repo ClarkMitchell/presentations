@@ -1,17 +1,8 @@
 <template>
   <div class="frontpage">
     <div class="content">
-      <h1><span class="logo"></span><span>Eagle</span><span class="grey">.js</span></h1>
-      <h2>A slideshow framework for hackers</h2>
-      <iframe class="github-star"
-              src="https://ghbtns.com/github-btn.html?user=zulko&amp;repo=eagle.js&amp;type=star&amp;count=true&amp;size=large"
-              frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
-      <p>Eagle.js is a web-based slideshow framework for Vue.js. It supports animations, themes, interactive widgets
-        (for web demos), and makes it easy to reuse components, slides and styles across presentations.
-      </p>
-      <p>Most of all, Eagle aims at offering a simple and very hackable API so you can get off the beaten tracks and
-        craft the slideshows you really want.
-      </p>
+      <h1><span class="logo"></span><span>Presentations</span></h1>
+      <h2>Made with Eagle.js</h2>
       <div class="thumbnails">
         <div class="box-card" v-bind:key="slideshow" v-for="slideshow in slideshows">
           <router-link :to="slideshow.infos.path" @click.native="click">
@@ -71,7 +62,7 @@ h1, h2, h3, h4, p {
 }
 
 h1 {
-  font-size: 8em;
+font-size: 5em;
   margin-top: 0.5em;
   margin-bottom: 0;
   line-height: 0.8em;

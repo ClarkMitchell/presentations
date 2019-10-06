@@ -42,7 +42,7 @@ export default {
 </script>
 
 <style lang='scss' scoped>
-@import url(https://fonts.googleapis.com/css?family=Patrick+Hand+SC);
+  @import url(https://fonts.googleapis.com/css?family=Patrick+Hand+SC);
 
 .frontpage {
   width: 100%;

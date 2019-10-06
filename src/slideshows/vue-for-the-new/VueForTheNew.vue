@@ -1,28 +1,115 @@
+
 <template>
   <div id="MyFirstSlideshow">
     <div class="eg-slideshow">
-      <web></web>
-<!--      <slide>-->
-<!--        <h1>Vue for the New</h1>-->
-<!--        <h4>This is your first slideshow !</h4>-->
-<!--      </slide>-->
-<!--      <slide enter="bounceInRight" leave="fadeOut">-->
-<!--        <h3>Hey modify me !</h3>-->
-<!--        <p>Come on modify me ! If you are running the development server, you will see the changes take effect-->
-<!--          immediately-->
-<!--        </p>-->
-<!--      </slide>-->
-<!--      <slide enter="fadeIn">-->
-<!--        <h3>Want cool effects?</h3>-->
-<!--        <p>Code your own, or try stealing for the other slideshows !</p>-->
-<!--      </slide>-->
+      <slide enter="fade in">
+        <h1>In the beginning...</h1>
+      </slide>
+      <slide enter="fade in">
+        <h1>html</h1>
+      </slide>
+      <slide enter="fade in">
+        <h1>Javascript</h1>
+      </slide>
+      <slide enter="fade in">
+        <h1>Angular, React</h1>
+      </slide>
+      <slide enter="fade in">
+        <h1>new Vue()</h1>
+      </slide>
+      <slide enter="fade in">
+        <h1>Declarative Rendering</h1>
+      </slide>
+      <slide enter="fade in">
+        <h1>Conditionals and Loops</h1>
+      </slide>
+      <slide enter="fade in">
+        <h1>v-on and v-bind</h1>
+      </slide>
+      <slide enter="fade in">
+        <h1>Vue Instance</h1>
+      </slide>
+      <slide enter="fade in">
+        <h1>Data, Methods</h1>
+      </slide>
+      <slide enter="fade in">
+        <h1>Vue Lifecycle</h1>
+      </slide>
+      <slide enter="fade in">
+        <h1>Components</h1>
+      </slide>
+      <slide enter="fade in">
+        <h1>Syntax</h1>
+      </slide>
+      <slide enter="fade in">
+        <h1>Templating</h1>
+      </slide>
+      <slide enter="fade in">
+        <h1>Shorthand</h1>
+      </slide>
+      <slide enter="fade in">
+        <h1>JS in Templates</h1>
+      </slide>
+      <slide enter="fade in">
+        <h1>Computed vs Methods</h1>
+      </slide>
+      <slide enter="fade in">
+        <h1>function</h1>
+      </slide>
+      <slide enter="fade in">
+        <h1>Props</h1>
+      </slide>
+      <slide enter="fade in">
+        <h1>Emitting Events</h1>
+      </slide>
+      <slide enter="fade in">
+        <h1>Slots</h1>
+      </slide>
+      <slide enter="fade in">
+        <h1>Transitions</h1>
+      </slide>
+      <slide enter="fade in">
+        <h1>Single File Components</h1>
+      </slide>
+      <slide enter="fade in">
+        <h1>Ecosystem</h1>
+      </slide>
+      <slide enter="fade in">
+        <h1>Unit Testing</h1>
+      </slide>
+      <slide enter="fade in">
+        <h1>Typescript</h1>
+      </slide>
+      <slide enter="fade in">
+        <h1>Don't use classes</h1>
+      </slide>
+      <slide enter="fade in">
+        <h1>Hooks</h1>
+      </slide>
+      <slide enter="fade in">
+        <h1>Vue Router</h1>
+      </slide>
+      <slide enter="fade in">
+        <h1>Vuex</h1>
+      </slide>
+      <slide enter="fade in">
+        <h1>Vuepress</h1>
+      </slide>
+      <slide enter="fade in">
+        <h1>Nuxt</h1>
+      </slide>
+      <slide enter="fade in">
+        <h1>Gridsome</h1>
+      </slide>
+      <slide enter="fade in">
+        <h1>Nativescript Vue</h1>
+      </slide>
     </div>
   </div>
 </template>
 
 <script>
 import eagle from 'eagle.js'
-import Web from './Web'
 
 export default {
   mixins: [eagle.slideshow],
@@ -30,34 +117,31 @@ export default {
     title: 'Vue for the New',
     description: 'A boilerplate to get you started',
     path: 'vue-for-the-new'
-  },
-  components: {
-    'web': Web
   }
 }
 </script>
 
 <style lang='scss'>
-  @import url(https://fonts.googleapis.com/css?family=Raleway);
+  @import url(https://fonts.googleapis.com/css?family=Patrick+Hand+SC);
 
   #MyFirstSlideshow {
     .eg-slideshow {
-      font-family: 'Raleway';
-      background-color: #eef;
+      font-family: 'Patrick Hand SC';
+      background-color: #f8f8f2;
 
       .eg-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
         .eg-slide-content {
-          width: 25em;
-          max-width: 80%;
-          margin: 0 auto;
+
         }
       }
     }
 
     .eg-slide-content {
-      width: 25em;
-      max-width: 80%;
-      margin: 0 auto;
+
     }
   }
 </style>

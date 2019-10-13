@@ -2,23 +2,76 @@
 <template>
   <div id="MyFirstSlideshow">
     <div class="eg-slideshow">
-      <slide enter="fade in">
-        <h1>In the beginning...</h1>
+      <slide enter="animated fadeInDown">
+        <h1>Vue for the New</h1>
+        <img src="./assets/vue-logo.png" alt="Vue.js logo">
       </slide>
-      <slide enter="fade in">
-        <h1>html</h1>
+      <slide :steps=4 enter="bounceInRight" leave="bounceOutDown">
+        <h3>The Progressive Javascript Framework</h3>
+        <div class="center">
+          <eg-transition enter="bounceInLeft" leave="bounceOutLeft">
+            <h4 v-if="step >= 2">Reactivity</h4>
+          </eg-transition>
+          <eg-transition enter="bounceInRight" leave="bounceOutRight">
+            <h4 v-if="step >= 3">Composability</h4>
+          </eg-transition>
+          <eg-transition enter="bounceInLeft" leave="bounceOutLeft">
+            <h4 v-if="step >= 4">Ecosystem</h4>
+          </eg-transition>
+        </div>
       </slide>
-      <slide enter="fade in">
-        <h1>Javascript</h1>
+      <slide enter="animated fadeInDown">
+        <h1>Evan You</h1>
+        <img src="./assets/evan-you.jpg" alt="Vue.js logo">
       </slide>
-      <slide enter="fade in">
-        <h1>Angular, React</h1>
+      <slide :steps=3 enter="bounceInRight" leave="bounceOutDown">
+        <h4>What Came Before...</h4>
+          <eg-transition enter="bounceInLeft" leave="none">
+            <img v-if="step == 2" src="./assets/iconfinder_JQuery_logo_282806.png" alt="Vue.js logo">
+          </eg-transition>
+          <eg-transition enter="bounceInLeft" leave="none">
+            <img v-if="step == 3" src="./assets/jquery-soup.png" alt="Vue.js logo">
+          </eg-transition>
       </slide>
-      <slide enter="fade in">
-        <h1>new Vue()</h1>
+      <slide :steps=2 enter="bounceInRight" leave="bounceOutDown">
+        <h3>The Enterprise Alternative</h3>
+        <div class="center">
+          <eg-transition enter="bounceInLeft" leave="bounceOutLeft">
+            <img v-if="step >= 2" src="./assets/angular.png" alt="Vue.js logo">
+          </eg-transition>
+          <eg-transition enter="bounceInRight" leave="bounceOutRight">
+            <img v-if="step >= 3" src="./assets/react-logo.png" alt="Vue.js logo">
+          </eg-transition>
+        </div>
       </slide>
-      <slide enter="fade in">
-        <h1>Declarative Rendering</h1>
+      <slide :steps=2 enter="bounceInRight" leave="bounceOutDown">
+        <h3>The Facebook Frontrunner</h3>
+        <div class="center">
+          <eg-transition enter="bounceInRight" leave="bounceOutRight">
+            <img v-if="step >= 2" src="./assets/react-logo.png" alt="Vue.js logo">
+          </eg-transition>
+        </div>
+      </slide>
+      <slide enter="animated fadeInDown">
+        <h4>new Vue();</h4>
+        <img src="./assets/declarative.png" alt="simple vue example">
+      </slide>
+      <slide :steps=4 enter="bounceInRight" leave="bounceOutDown">
+        <h3>Declarative Rendering</h3>
+        <div class="center">
+          <eg-transition enter="bounceInLeft" leave="bounceOutLeft">
+            <h4 v-if="step >= 2">"Mustache" Template syntax</h4>
+          </eg-transition>
+          <eg-transition enter="bounceInRight" leave="bounceOutRight">
+            <h4 v-if="step >= 3">Data Binding</h4>
+          </eg-transition>
+          <eg-transition enter="bounceInLeft" leave="bounceOutLeft">
+            <h4 v-if="step >= 4">Reactivity</h4>
+          </eg-transition>
+        </div>
+      </slide>
+      <slide enter="animated fadeInDown">
+        <img src="./assets/new-vue.png" alt="simple vue example">
       </slide>
       <slide enter="fade in">
         <h1>Conditionals and Loops</h1>
@@ -129,19 +182,12 @@ export default {
       font-family: 'Patrick Hand SC';
       background-color: #f8f8f2;
 
-      .eg-slide {
+      .eg-slide-content {
         display: flex;
         align-items: center;
         justify-content: center;
-
-        .eg-slide-content {
-
-        }
+        flex-direction: column;
       }
-    }
-
-    .eg-slide-content {
-
     }
   }
 </style>

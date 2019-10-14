@@ -1,7 +1,7 @@
 <template>
   <div class="frontpage">
     <div class="content">
-      <h1><span class="logo"></span><span>Presentations</span></h1>
+      <h1><span>Presentations</span></h1>
       <h2>Made with Eagle.js</h2>
       <div class="thumbnails">
         <div class="box-card" v-bind:key="slideshow" v-for="slideshow in slideshows">

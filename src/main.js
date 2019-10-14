@@ -28,7 +28,8 @@ let router = new Router({
   routes
 })
 
-new Vue({
+// eslint-disable-next-line no-unused-vars
+var vue = new Vue({
   el: '#app',
   router,
   render: h => h('App'),

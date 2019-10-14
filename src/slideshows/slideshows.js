@@ -2,7 +2,6 @@
 // website, don't forget to register your new slideshows in the list:
 export default {
   list: [
-    require('./themes-slideshow/ThemesSlideshow').default,
     require('./vue-for-the-new/VueForTheNew').default
   ]
 }
